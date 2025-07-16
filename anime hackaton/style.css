@@ -1,0 +1,499 @@
+@import url('https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&family=LXGW+Marker+Gothic&family=Michroma&display=swap');
+*{
+    padding:0;
+    margin:0;
+    box-sizing: 0;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #000000;
+    cursor: url('./imgs/sports_volleyball_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.png'), auto;
+}
+button{
+    font-family: "Michroma";
+    cursor:pointer;
+}
+
+menu{
+    top:0px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgba(56, 56, 56, 0.7);
+    width:100%;
+    position: fixed;
+    z-index: 2;
+}
+.link{
+    padding:20px;
+    font-size: 20px;
+    margin:10px 60px 0px 40px;
+    text-decoration: none;
+    color:white;
+    font-family: "LXGW Marker Gothic";
+}
+.link:hover{
+    color:#FF8000;
+    transition: 0.5s ease-in-out;
+    font-size: 23px;
+}
+.logo{
+    text-decoration: none;
+    font-size: 60px;
+    margin-bottom:20px;
+    color:#FF8000;
+    font-family: "Jaro";
+}
+.logo:hover{
+    text-decoration:dashed;
+}
+
+.home{
+    display: flex;
+    flex-direction: row;
+    margin-top:100px;
+    margin-left:40px;
+}
+.home-left{
+    display: flex;
+    flex-direction: column;
+    color:#FF8000;
+}
+.home-left img{
+    width:400px;
+    height:200px;
+    position: relative;
+    bottom:-80px;
+    left:10px;
+}
+.home-left img:hover{
+    transition: 0.5s ease-in-out;
+    left:20px;
+}
+.home-left h1{
+    font-size: 110px;
+    font-family: "Jaro";
+    font-weight: 100;
+    font-style: italic;
+    position: relative;
+    left:10px;
+}
+.home-left h1:hover{
+    transition: 0.5s ease-in-out;
+    left:-5px;
+}
+.home-left p{
+    font-family: "LXGW Marker Gothic";
+    font-size: 30px;
+}
+.home-left button{
+    width:230px;
+    height: 75px;
+    color:#282828;
+    background-color: #FF8000;
+    border: solid #000000;
+    border-radius: 20px;
+    position: relative;
+    margin:20px;
+    align-items: center;
+    justify-content: space-between;
+    left:10px;
+    cursor: pointer;
+}
+.home-left button:hover{
+    transition: 0.5s ease-in-out;
+    color:#FF8000;
+    background-color: #191919;
+    border-color: #FF8000;
+    transform:scale(1.1) ;
+}
+.home-left button a{
+    font-size: 20px;
+    position: relative;
+    top:-30px;
+    text-decoration: none;
+    color:#191919;
+    font-weight: 900;
+}
+.home-left button:hover a{
+    transition: 0.5s ease-in-out;
+    color:#FF8000;
+}
+.home-left button img{
+    width:70px;
+    height:70px;
+    position: relative;
+    top:0px;
+    left:-4px;
+}
+.home-left button:hover img{
+    left:-4px;
+}
+.home-right{
+    position: absolute;
+    width:300px;
+    left:400px;
+    top:-400px;
+}
+.home-right img{
+    width:1059px;
+}
+.home-right img:hover{
+    transition: 0.5s ease-in-out;
+    transform: rotate(-1deg);
+}
+
+.seasons{
+    display: flex;
+    flex-direction: row;
+    margin-top:100px;
+    margin-bottom: 100px;
+    margin-left: 50px;
+    justify-content: center;
+}
+.season{
+    width:200px;
+    padding:40px;
+    color:white;
+    font-family: "LXGW Marker Gothic";
+    text-align: center;
+}
+.season:hover{
+    transition: 0.5s ease-in-out;
+    transform: scale(1.05);
+}
+.season img{
+    width: 200px;
+    height:300px;
+    border-radius: 20px;
+}
+.season img:hover{
+    transition: 0.3s ease-in-out;
+    box-shadow: #FF8000 0px 0px 30px;
+}
+.season h1{
+    font-size: 40px;
+    margin:10px;
+}
+.season p{
+    display: none;
+    font-size: 20px;
+    color:rgb(194, 194, 194);
+}
+.season button{
+    width:145px;
+    height:50px;
+    border-radius: 20px;
+    background-color: #FF8000;
+    color:white;
+    font-size: 14px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    border:solid black;
+}
+.season button:hover{
+    background-color:#282828;
+    color:#FF8000;
+    transition: 0.5s ease-in-out;
+    transform: scale(1.1);
+    border-color: #FF8000;
+}
+
+.movies{
+    display: flex;
+    flex-direction: column;
+}
+.movies h1{
+    color:#FF8000;
+    font-family: "Jaro";
+    font-size: 40px;
+    font-weight: 100;
+    margin-left:50px;
+}
+.movies-top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-right:30px;
+}
+.movie-top:hover, .movie-bttm:hover{
+    transition: 0.5s ease-in-out;
+    transform: scale(1.03);
+}
+.movies-bttm{
+    margin-left: 160px;
+    margin-right: 180px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.movie-top, .movie-bttm{
+    display: flex;
+    flex-direction: column;
+    margin:20px;
+    align-items: center;
+    position: relative;
+}
+.movie-top img, .movie-bttm img{
+    width:340px;
+    border-radius: 10px;
+}
+.movie-top img:hover, .movie-bttm img:hover{
+    transition: 0.3s ease-in-out;
+    box-shadow: #FF8000 0px 0px 30px;;
+}
+.movie-top h1, .movie-bttm h1{
+    align-items: center;
+    margin-right:50px;
+    width:300px;
+    text-align: center;
+    padding:10px;
+    color:#FF8000;
+    font-size: 18px;
+    font-family: "LXGW Marker Gothic";
+    padding-bottom: 20px;
+}
+.movie-top button, .movie-bttm button{
+    width:200px;
+    height:50px;
+    border-radius: 20px;
+    background-color: #FF8000;
+    color:#ffffff;
+    font-weight: 900;
+    border:solid black;
+}
+.movie-top button:hover, .movie-bttm button:hover{
+    transition: 0.5s ease-in-out;
+    background-color:#282828;
+    color:#FF8000;
+    transform: scale(1.1);
+    border-color: #FF8000;
+}
+
+.teams{
+    padding-bottom:190px;
+}
+.important-teams{
+    font-family: "Michroma";
+    padding-left:30px;
+    display: flex;
+    flex-direction: row;
+    margin-top:60px;
+}
+.important-teams h1{
+    color:#FFCE13;
+    width:500px;
+    font-size: 30px;;
+}
+.important-teams p{
+    color:#ffffff;
+    position: relative;
+    top:60px;
+    left:-60px;
+}
+.teams-img{
+    display: flex;
+    position: relative;
+    height:100px;
+    margin:30px;
+}
+.karasuno, .nekoma, .fukurodani, .shiratorizawa, .aoba-johsai, .inarizaki{
+    position: absolute;
+}
+.karasuno:hover, .nekoma:hover, .fukurodani:hover, .shiratorizawa:hover, .aoba-johsai:hover, .inarizaki:hover{
+    transition: 0.3s ease-in-out;
+    filter: hue-rotate(0.1turn);
+    cursor: pointer;
+}
+.karasuno{
+    width:375px;
+    height:252px;
+    top: 341px;
+    left: 252px;
+}
+.nekoma{
+    width:472px;
+    height:343px;
+    left:353px;
+    border-radius: 0px 20px 0px 0px ;
+}
+.fukurodani{
+    width:202px;
+    height:252px;
+    top: 341px;
+    left:623px;
+    border-radius: 0px 0px 20px 0px;
+}
+.shiratorizawa{
+    width:252px;
+    height:353px;
+    top: 239px;
+    border-radius: 0px 0px 0px 20px;
+}
+.aoba-johsai{
+    width:353px;
+    height:239px;
+    left:0px;
+    top:0px;
+    border-radius: 20px 0px 0px 0px;
+}
+.inarizaki{
+    width:480px;
+    height: 197px;
+    top:220px;
+    left:200px;
+    border-radius: 20px;;
+}
+.teams-text{
+    display: flex;
+    flex-direction: column;
+    width:400px;
+    position: absolute;
+    right:150px;
+    font-size: 30px;
+    text-align: left;
+}
+.teams-text h1{
+    font-family: "Jaro";
+    color:white;
+    font-size: 80px;
+    font-weight: 100;
+
+}
+.teams-text p{
+    color:white;
+    font-family: "LXGW Marker Gothic";
+}
+.karasuno-text, .nekoma-text, .fukurodani-text, .shiratorizawa-text, .aoba-johsai-text, .inarizaki-text{
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top:-150px;
+    
+}
+.karasuno-text h1{
+    color:#FF8000;
+}
+.nekoma-text h1{
+    color:#FF0000;
+}
+.fukurodani-text h1{
+    color:#D2BA5C;
+}
+.aoba-johsai-text h1{
+    color:#50E4FF;
+}
+.inarizaki-text h1{
+    color:#545454;
+}
+.shiratorizawa-text h1{
+    color:#9050FF;
+}
+
+.the-mc{
+    margin-top:400px;
+    color:#FF8000;
+    font-family: "Michroma";
+    display: flex;
+    flex-direction: column;
+    height:800px;
+}
+.the-mc h1{
+    justify-content: center;
+    font-size: 40px;
+    margin-left:340px;
+    position: relative;
+    bottom:-40px;
+}
+.mc{
+    color:#ffffff;
+}
+.mc-top{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin:50px;
+    position: relative;
+}
+.mc-top p{
+    padding:30px;
+    width:700px;
+    font-size: 20px;
+}
+.mc-top img{
+    width:400px;
+    margin-left:90px;
+}
+.mc-bottom{
+    display: flex;
+    flex-direction: row;
+    margin-top: 90px;
+}
+.mc-bottom p{
+    width:1000px;
+    font-size: 20px;
+    position:relative;
+    left:-40px;
+    z-index: -1;
+}
+.hinata-right{
+    position:relative ;
+    top:-170px;
+    width:355px;
+    height:517px;
+    z-index: 1.5;
+}
+.hinata-left{
+    position: relative;
+    top:-170px;
+    z-index: 1.5;
+}
+.hinata-left:hover{
+    transition: 0.5s ease-in-out;
+    transform: rotate(-5deg);
+}
+.hinata-right:hover{
+    transition: 0.5s ease-in-out;
+    transform: rotate(5deg);
+}
+.mc-top img:hover{
+    transition: 0.5s ease-in-out;
+    transform: scale(1.1);
+}
+
+.footer{
+    width:100%;
+    background-color: #FF8000;
+    position: relative;
+    height:180px;
+    top:60px;
+    display: flex;
+    justify-content: space-between;
+}
+footer a{
+    color:#000000;
+    text-decoration: none;
+    font-family: "LXGW Marker Gothic";
+    font-size: 20px;
+    padding:20px;
+    position: relative;
+    top:20px;
+}
+.footer a:hover, .footer-links a:hover, .footer-company:hover {
+    transition: 0.5s ease-in-out;
+    transform: scale(1.1);
+}
+.back-top{
+    height:20px;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+.back-top img{
+    position: relative;
+    top:20px;
+    right:10px;
+    width:20px;
+    height:20px;
+    cursor:pointer;
+}
